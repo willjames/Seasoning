@@ -6,13 +6,19 @@ As you almost certainly know, Google do this all the time. Back through the swir
 time, I thought I'd write an utility class providing some date-based functions to automate this. 
 After all, if you've gone to the effort of knocking up a Halloween logo, or slinging in some fireworks 
 for November 5th, you're probably going to want the same shenanigans next year as well, right? 
-And so this project was born.
+And so the Seasoning project was born...
+
+At present, Seasoning is very UK-centric. If you're working on an internationalised site or product, you may be 
+wanting one of these for France, or Germany, or the USA, or indeed any country. And this is where the 
+community bit of GitHub comes in (at least I'm hoping!). Pull requests for new country utility classes will 
+be greatly welcomed, particularly if they come with test coverage. I've specced a French test suite in the 
+hope of getting the ball rolling...
 
 
 Release notes
 -------------
 
-v.0.1 - legacy code refactored, tests around UK seasoning, test classes for FR done.
+v.0.1 - legacy code refactored, tests around UK seasoning, test classes for FR sketched out.
 
 
 General notes
