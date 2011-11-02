@@ -1,6 +1,8 @@
 ﻿Seasoning
 ---------
 
+Language: C#
+
 One thing that can add a bit of personality to a site is to mess around with the logo occasionally. 
 As you almost certainly know, Google do this all the time. Back through the swirling grey mists of 
 time, I thought I'd write an utility class providing some date-based functions to automate this. 
@@ -10,11 +12,104 @@ And so the Seasoning project was born...
 
 At present, Seasoning is very UK-centric. If you're working on an internationalised site or product, you may be wanting one of these for France, or Germany, or the USA, or indeed any country. And this is where the community bit of GitHub comes in (at least I'm hoping!). Pull requests for new country utility classes will be greatly welcomed, particularly if they come with test coverage. I've specced a French test suite in the hope of getting the ball rolling...
 
+How would you use it?
+---------------------
+
+To use Seasoning in an ASP.Net MVC app, do the following:
+
+1. Clone the repo.
+2. Open the solution and build it in Release mode.
+3. Drag the created dll into the lib directory of your project.
+4. Add a reference to Seasoning in the project in which you wish to use it.
+
+Example with a logo
+
+1. Create two logo domain objects as follows: 
+(I've created two as there may be areas where you don't want to use a seasonal logo)
+
+------------------------------
+// Logo.cs
+
+using Seasoning;
+
+namespace MyProject.Domain
+{
+	public class Logo
+	{
+		public string Filename = "default.jpg";
+	}
+
+	// better in its own file
+	public class SeasonalLogo : Logo
+	{
+		public SeasonalLogo(DateTime now)
+		{
+			if (UkSeasonUtilities.IsAprilFoolsDay(now))
+				Filename = "aprilFoolLogo.jpg";
+		}
+	}
+}
+-------------------------
+
+2. Create a new view model, new controller and new partial view for the logo. 
+
+-------------------------
+
+// ViewModel
+
+using MyProject.Domain;
+
+namespace MyProject.Models
+{
+	public class LogoViewModel
+	{
+		public Logo Logo;
+	}
+}
+
+// Controller
+
+using MyProject.Domain;
+using MyProject.Models;
+
+namespace MyProject.Controllers
+{
+    public class LogoController : Controller
+    {
+        public ActionResult Index()
+        {
+        	var model = new LogoViewModel
+        	            	{
+        	            		Logo =  new SeasonalLogo(DateTime.Today)
+        	            	};
+			
+            return View("/Views/Logo.ascx", model);
+        }
+    }
+}
+
+// partial view
+
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<MyProject.Models.LogoViewModel>" %>
+<a href="/"><img src="[YOUR IMAGE FOLDER HERE]<% Model.Logo.Filename%>" alt=""/></a>
+
+-------------------------
+
+And you're done. The above will show an April Fools logo on April 1st, and a regular one the rest of the time. SeasonalLogo can be extended to use as many of the methods in UkSeasonUtilities as you like. Happy Seasoning!
 
 Release notes
 -------------
-
+v.0.1.1 - Sample usage added to readme
 v.0.1 - legacy code refactored, tests around UK seasoning, test classes for FR sketched out.
+
+
+Development plans / ideas
+-------------------------
+
+Add support for more countries
+Add alt text 
+Port to Javascript
+
 
 
 General notes
