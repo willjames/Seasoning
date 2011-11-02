@@ -1,7 +1,12 @@
 ﻿Seasoning
 ---------
 
-One thing that can add a bit of personality to a site is to mess around with the logo occasionally. As you almost certainly know, Google do this all the time. Back through the swirling grey mists of time, I thought I'd write an utility class providing some date-based functions to automate this. After all, if you've gone to the effort of knocking up a Halloween logo, or slinging in some fireworks for November 5th, you're probably going to want the same shenanigans next year as well, right? And so this class was born.
+One thing that can add a bit of personality to a site is to mess around with the logo occasionally. 
+As you almost certainly know, Google do this all the time. Back through the swirling grey mists of 
+time, I thought I'd write an utility class providing some date-based functions to automate this. 
+After all, if you've gone to the effort of knocking up a Halloween logo, or slinging in some fireworks 
+for November 5th, you're probably going to want the same shenanigans next year as well, right? 
+And so this project was born.
 
 
 Release notes
