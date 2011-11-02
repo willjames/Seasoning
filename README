@@ -1,0 +1,26 @@
+﻿Seasoning
+---------
+
+One thing that can add a bit of personality to a site is to mess around with the logo occasionally. As you almost certainly know, Google do this all the time. Back through the swirling grey mists of time, I thought I'd write an utility class providing some date-based functions to automate this. After all, if you've gone to the effort of knocking up a Halloween logo, or slinging in some fireworks for November 5th, you're probably going to want the same shenanigans next year as well, right? And so this class was born.
+
+
+Release notes
+-------------
+
+v.0.1 - legacy code refactored, tests around UK seasoning, test classes for FR done.
+
+
+General notes
+-------------
+
+British Summer Time (also known as Daylight Saving Time, or DST) start / end rules
+		
+DST is in force from the last Sunday in March until the last Sunday in October. http://wwp.greenwichmeantime.com/
+(spring forward, fall back)
+
+NB changes are made at 1am on the Sunday, so typically you will want to show a "change the clocks" reminder on the day before...
+
+DST is currently under review by the UK government (November 2011).
+
+Define Christmas.... Advent? 12th night?
+
