@@ -5,7 +5,7 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class UkSeasonUtilitiesTests
+	public class UkSeasonUtilitiesTests 
 	{
 		[Test]
 		public void Should_return_true_for_IsAprilFoolsDay()
@@ -16,11 +16,18 @@ namespace SeasoningTests
 		}
 
 		[Test]
+		public void Should_return_true_for_IsArmisticeDay()
+		{
+			var dateToEvaluate = new DateTime(2011, 11, 11);
+			Assert.That(UkSeasonUtilities.IsArmisticeDay(dateToEvaluate), Is.True);
+		}
+
+		[Test]
 		public void Should_return_true_for_Christmas_Day_when_date_is_December_25th()
 		{
 			var dateToEvaluate = new DateTime(2011, 12, 25);
 
-			Assert.That(UkSeasonUtilities.IsChristmas(dateToEvaluate), Is.True);
+			Assert.That(SeasonUtilities.IsChristmas(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -105,7 +112,7 @@ namespace SeasoningTests
 		{
 			// april 24th 2011 is a known easter sunday 
 			var dateToEvaluate = new DateTime(2011, 4, 24);
-			Assert.That(UkSeasonUtilities.IsEaster(dateToEvaluate), Is.True);
+			Assert.That(SeasonUtilities.IsEaster(dateToEvaluate), Is.True);
 
 		}
 	}

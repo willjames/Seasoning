@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeSeasonUtilitiesTests.cs" />
+    <Compile Include="EsSeasonUtilitiesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrSeasonUtilitiesTests.cs" />
     <Compile Include="UkSeasonUtilitiesTests.cs" />
