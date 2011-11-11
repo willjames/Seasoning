@@ -97,11 +97,6 @@ namespace MyProject.Controllers
 
 And you're done. The above will show an April Fools logo on April 1st, and a regular one the rest of the time. SeasonalLogo can be extended to use as many of the methods in UkSeasonUtilities as you like. Happy Seasoning!
 
-Release notes
--------------
-v.0.1.1 - Sample usage added to readme
-v.0.1 - legacy code refactored, tests around UK seasoning, test classes for FR sketched out.
-
 
 Development plans / ideas
 -------------------------
@@ -109,8 +104,6 @@ Development plans / ideas
 Add support for more countries
 Add alt text 
 Port to Javascript
-
-
 
 General notes
 -------------
@@ -125,4 +118,3 @@ NB changes are made at 1am on the Sunday, so typically you will want to show a "
 DST is currently under review by the UK government (November 2011).
 
 Define Christmas.... Advent? 12th night?
-
