@@ -50,7 +50,7 @@ namespace Seasoning
 			}
 		}
 
-		private static DateTime EasterSunday(int year)
+		public static DateTime EasterSunday(int year)
 		{
 			int month = 0;
 			int day = 0;

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using NUnit.Framework;
+using Seasoning;
 
 namespace SeasoningTests
 {
@@ -24,10 +22,89 @@ namespace SeasoningTests
 			German Unity Day				Tag der Deutschen Einheit	3 October
 			Reformation Day					Reformationstag				31 October
 			All Saints						Allerheiligen				1 November
-			Day of Repentance and Prayer	Buß- und Bettag				Wed. before 23 November
 			Christmas Day					Weihnachtstag				25 December
 			St Stephen's Day				Zweiter Weihnachtsfeiertag	26 December
 		 */
+
+		[Test]
+		public void Should_return_true_for_IsEpiphany()
+		{
+			var dateToEvaluate = new DateTime(2011, 1, 6);
+
+			Assert.That(DeSeasonUtilities.IsEpiphany(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsLabourDay()
+		{
+			var dateToEvaluate = new DateTime(2011, 5, 1);
+
+			Assert.That(DeSeasonUtilities.IsLabourDay(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsAscensionDay()
+		{
+			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(39);
+
+			Assert.That(DeSeasonUtilities.IsAscensionDay(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsWhitMonday()
+		{
+			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(50);
+
+			Assert.That(DeSeasonUtilities.IsWhitMonday(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsCorpusChristi()
+		{
+			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(60);
+
+			Assert.That(DeSeasonUtilities.IsCorpusChristi(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsPeaceFestival()
+		{
+			var dateToEvaluate = new DateTime(2011,8,8);
+
+			Assert.That(DeSeasonUtilities.IsPeaceFestival(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsAssumptionDay()
+		{
+			var dateToEvaluate = new DateTime(2011, 8, 15);
+
+			Assert.That(DeSeasonUtilities.IsAssumptionDay(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsGermanUnityDay()
+		{
+			var dateToEvaluate = new DateTime(2011, 10, 3);
+
+			Assert.That(DeSeasonUtilities.IsGermanUnityDay(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsReformationDay()
+		{
+			var dateToEvaluate = new DateTime(2011, 10, 31);
+
+			Assert.That(DeSeasonUtilities.IsReformationDay(dateToEvaluate), Is.True);
+		}
+
+		[Test]
+		public void Should_return_true_for_IsAllSaints()
+		{
+			var dateToEvaluate = new DateTime(2011, 11, 1);
+
+			Assert.That(DeSeasonUtilities.IsAllSaints(dateToEvaluate), Is.True);
+		}
 
 	}
 }
