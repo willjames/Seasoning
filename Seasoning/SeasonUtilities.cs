@@ -20,6 +20,11 @@ namespace Seasoning
 			return (dateToEvaluate >= startDate && dateToEvaluate <= endDate);
 		}
 
+		public static bool IsNewYearsDay(DateTime dateToEvaluate)
+		{
+			return dateToEvaluate.DayOfYear == 1;
+		}
+
 		public static bool IsEaster(DateTime dateToEvaluate)
 		{
 			DateTime dtEasterSunday = EasterSunday(dateToEvaluate.Year);
