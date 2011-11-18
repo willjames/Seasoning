@@ -97,5 +97,23 @@ namespace Seasoning
 			}
 			return lastSundayOfTheMonth;
 		}
+
+		public static bool IsShroveTuesday(DateTime dateToEvaluate)
+		{
+			// Shrove Tuesday is 47 days before Easter 
+			var easterSunday = EasterSunday(dateToEvaluate.Year);
+			var shroveTuesday = easterSunday.AddDays(-47);
+
+			return (dateToEvaluate.Day == shroveTuesday.Day && dateToEvaluate.Month == shroveTuesday.Month);
+		}
+
+		public static bool IsAshWednesday(DateTime dateToEvaluate)
+		{
+			// Ash Wednesday is 46 days before Easter 
+			var easterSunday = EasterSunday(dateToEvaluate.Year);
+			var ashWednesday = easterSunday.AddDays(-46);
+
+			return (dateToEvaluate.Day == ashWednesday.Day && dateToEvaluate.Month == ashWednesday.Month);
+		}
 	}
 }
