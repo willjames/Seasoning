@@ -7,7 +7,7 @@ namespace Seasoning
 	{
 		public static bool IsMartinLutherKingBirthday(DateTime dateToEvaluate)
 		{
-			if (dateToEvaluate == GetNthDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 3))
+			if (dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 3))
 				return true;
 
 			return false;

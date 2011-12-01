@@ -33,7 +33,7 @@ namespace Seasoning
 			return (dateToEvaluate >= dtEasterSunday.AddDays(-2) && dateToEvaluate <= dtEasterSunday.AddDays(1));
 		}
 
-		protected static DateTime GetNthDayOfWeekForSpecificMonth(DateTime dateToEvaluate, DayOfWeek dayOfWeek, int nthDayOfWeek)
+		protected static DateTime GetOrdinalDayOfWeekForSpecificMonth(DateTime dateToEvaluate, DayOfWeek dayOfWeek, int ordinalDayOfWeek)
 		{
 			// gets, for example, the third Monday in January, or the second Friday in August.
 
@@ -49,7 +49,7 @@ namespace Seasoning
 				dateForIteration = dateForIteration.AddDays(1);
 			}
 
-			return new DateTime(dateToEvaluate.Year, dateToEvaluate.Month, listOfDayOfWeekInMonth[nthDayOfWeek - 1]);
+			return new DateTime(dateToEvaluate.Year, dateToEvaluate.Month, listOfDayOfWeekInMonth[ordinalDayOfWeek - 1]);
 		}
 
 		// the two methods below are taken from http://www.codeproject.com/cs/samples/christianholidays.asp
