@@ -33,6 +33,25 @@ namespace Seasoning
 			return (dateToEvaluate >= dtEasterSunday.AddDays(-2) && dateToEvaluate <= dtEasterSunday.AddDays(1));
 		}
 
+		protected static DateTime GetNthDayOfWeekForSpecificMonth(DateTime dateToEvaluate, DayOfWeek dayOfWeek, int nthDayOfWeek)
+		{
+			// gets, for example, the third Monday in January, or the second Friday in August.
+
+			var listOfDayOfWeekInMonth = new List<int>();
+			int daysinMonth = DateTime.DaysInMonth(dateToEvaluate.Year, dateToEvaluate.Month);
+			var dateForIteration = new DateTime(dateToEvaluate.Year, dateToEvaluate.Month, 1);
+
+			for (int i = 1; i <= daysinMonth; i++)
+			{
+				if (dateForIteration.DayOfWeek == dayOfWeek)
+					listOfDayOfWeekInMonth.Add(i);
+
+				dateForIteration = dateForIteration.AddDays(1);
+			}
+
+			return new DateTime(dateToEvaluate.Year, dateToEvaluate.Month, listOfDayOfWeekInMonth[nthDayOfWeek - 1]);
+		}
+
 		// the two methods below are taken from http://www.codeproject.com/cs/samples/christianholidays.asp
 
 		private static void EasterSunday(int year, out int month, out int day)

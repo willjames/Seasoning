@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace Seasoning
 {
-	public class UsSeasonUtilities
+	public class UsSeasonUtilities : SeasonUtilities
 	{
 		public static bool IsMartinLutherKingBirthday(DateTime dateToEvaluate)
 		{
-			if (dateToEvaluate == GetThirdMondayInJanuary(dateToEvaluate))
+			if (dateToEvaluate == GetNthDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 3))
 				return true;
 
 			return false;
