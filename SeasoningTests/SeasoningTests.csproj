@@ -50,6 +50,7 @@
     <Compile Include="PtSeasonUtilitilesTests.cs" />
     <Compile Include="SeasonUtilitiesTests.cs" />
     <Compile Include="UkSeasonUtilitiesTests.cs" />
+    <Compile Include="UsSeasonUtilitiesTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Seasoning\Seasoning.csproj">
