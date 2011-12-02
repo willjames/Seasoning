@@ -6,7 +6,7 @@ namespace Seasoning
 	{
 		public static bool IsAprilFoolsDay(DateTime dateToEvaluate)
 		{
-			return (dateToEvaluate.Month == 4 && dateToEvaluate.Day >= 1);
+			return (dateToEvaluate.Month == 4 && dateToEvaluate.Day == 1);
 		}
 
 		public static bool IsArmisticeDay(DateTime dateToEvaluate)
@@ -21,13 +21,7 @@ namespace Seasoning
 
 		public static bool IsHalloween(DateTime dateToEvaluate)
 		{
-			//show halloween logo for two days
-			return (dateToEvaluate.Month == 10 && dateToEvaluate.Day >= 30);
-		}
-
-		public static bool IsNewYearsDay(DateTime dateToEvaluate)
-		{
-			return (dateToEvaluate.Month == 1 && dateToEvaluate.Day == 1);
+			return (dateToEvaluate.Month == 10 && dateToEvaluate.Day == 31);
 		}
 
 		public static bool IsStDavidsDay(DateTime dateToEvaluate)
