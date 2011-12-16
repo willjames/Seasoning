@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ItSeasonUtilities.cs" />
+    <Compile Include="PtSeasonUtilities.cs" />
     <Compile Include="DeSeasonUtilities.cs" />
     <Compile Include="EsSeasonUtilities.cs" />
     <Compile Include="FrSeasonUtilities.cs" />
