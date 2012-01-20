@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaSeasonUtilitiesTests.cs" />
     <Compile Include="DeSeasonUtilitiesTests.cs" />
     <Compile Include="EsSeasonUtilitiesTests.cs" />
     <Compile Include="ItSeasonUtilitiesTests.cs" />

@@ -6,10 +6,8 @@ namespace Seasoning
 	{
 		public static bool IsMartinLutherKingBirthday(DateTime dateToEvaluate)
 		{
-			if (dateToEvaluate.Month == 1 && dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 3))
-				return true;
-
-			return false;
+			return (dateToEvaluate.Month == 1 &&
+			        dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 3));
 		}
 
 		public static bool IsIndependenceDay(DateTime dateToEvaluate)
@@ -32,10 +30,8 @@ namespace Seasoning
 
 		public static bool IsLaborDay(DateTime dateToEvaluate)
 		{
-			if (dateToEvaluate.Month == 9 && dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 1))
-				return true;
-
-			return false;
+			return (dateToEvaluate.Month == 9 &&
+			        dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Monday, 1));
 		}
 
 		public static bool IsColumbusDay(DateTime dateToEvaluate)
@@ -48,10 +44,8 @@ namespace Seasoning
 
 		public static bool IsThanksgiving(DateTime dateToEvaluate)
 		{
-			if (dateToEvaluate.Month == 11 && dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Thursday, 4))
-				return true;
-
-			return false;
+			return (dateToEvaluate.Month == 11 &&
+			        dateToEvaluate == GetOrdinalDayOfWeekForSpecificMonth(dateToEvaluate, DayOfWeek.Thursday, 4));
 		}
 
 		public static bool IsGroundhogDay(DateTime dateToEvaluate)
