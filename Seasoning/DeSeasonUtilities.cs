@@ -6,12 +6,12 @@ namespace Seasoning
 	{
 		public static bool IsEpiphany(DateTime dateToEvaluate)
 		{
-			return (dateToEvaluate.Month == 1 && dateToEvaluate.Day >= 6);
+			return (dateToEvaluate.Month == 1 && dateToEvaluate.Day == 6);
 		}
 
 		public static bool IsLabourDay(DateTime dateToEvaluate)
 		{
-			return (dateToEvaluate.Month == 5 && dateToEvaluate.Day >= 1);
+			return (dateToEvaluate.Month == 5 && dateToEvaluate.Day == 1);
 		}
 
 		public static bool IsAscensionDay(DateTime dateToEvaluate)

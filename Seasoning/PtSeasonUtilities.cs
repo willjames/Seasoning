@@ -46,7 +46,7 @@ namespace Seasoning
 
 		public static bool IsCarnival(DateTime dateToEvaluate)
 		{
-			// carnaval lasts 2 days and finishes on Shrove Tuesday
+			// carnival lasts 2 days and finishes on Shrove Tuesday
 			var easterSunday = EasterSunday(dateToEvaluate.Year);
 			var shroveTuesday = easterSunday.AddDays(-47);
 
