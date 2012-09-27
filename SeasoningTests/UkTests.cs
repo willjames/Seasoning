@@ -5,21 +5,21 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class UkSeasonUtilitiesTests
+	public class UkTests
 	{
 		[Test]
 		public void Should_return_true_for_IsAprilFoolsDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 4, 1);
 
-			Assert.That(UkSeasonUtilities.IsAprilFoolsDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsAprilFoolsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsArmisticeDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 11);
-			Assert.That(UkSeasonUtilities.IsArmisticeDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsArmisticeDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -35,7 +35,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 05);
 
-			Assert.That(UkSeasonUtilities.IsFireworksNight(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsFireworksNight(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -43,7 +43,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 31);
 
-			Assert.That(UkSeasonUtilities.IsHalloween(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsHalloween(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -51,7 +51,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 1, 1);
 
-			Assert.That(UkSeasonUtilities.IsNewYearsDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsNewYearsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -59,7 +59,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 3, 1);
 
-			Assert.That(UkSeasonUtilities.IsStDavidsDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsStDavidsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -67,7 +67,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 3, 17);
 
-			Assert.That(UkSeasonUtilities.IsStPatricksDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsStPatricksDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -75,7 +75,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 30);
 
-			Assert.That(UkSeasonUtilities.IsStAndrewsDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsStAndrewsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -83,28 +83,28 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 4, 23);
 
-			Assert.That(UkSeasonUtilities.IsStGeorgesDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsStGeorgesDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsValentinesDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 2, 14);
-			Assert.That(UkSeasonUtilities.IsValentinesDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsValentinesDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsBritishSummerTimeStartDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 03, 27); // known last Sunday in March
-			Assert.That(UkSeasonUtilities.IsBritishSummerTimeStartDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsBritishSummerTimeStartDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsBritishSummerTimeEndDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 30); // known last Sunday in March
-			Assert.That(UkSeasonUtilities.IsBritishSummerTimeEndDay(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsBritishSummerTimeEndDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -121,7 +121,7 @@ namespace SeasoningTests
 		{
 			// april 24th 2011 is a known easter sunday 
 			var dateToEvaluate = new DateTime(2011, 3, 8);
-			Assert.That(UkSeasonUtilities.IsShroveTuesday(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsShroveTuesday(dateToEvaluate), Is.True);
 
 		}
 
@@ -130,7 +130,7 @@ namespace SeasoningTests
 		{
 			// april 24th 2011 is a known easter sunday 
 			var dateToEvaluate = new DateTime(2011, 3, 9);
-			Assert.That(UkSeasonUtilities.IsAshWednesday(dateToEvaluate), Is.True);
+			Assert.That(Uk.IsAshWednesday(dateToEvaluate), Is.True);
 
 		}
 	}

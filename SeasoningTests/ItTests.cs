@@ -5,7 +5,7 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class ItSeasonUtilitiesTests
+	public class ItTests
 	{
 		/* from http://en.wikipedia.org/wiki/Public_holidays_in_Italy
 		 *	Date					English Name
@@ -29,7 +29,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 1, 6);
 
-			Assert.That(ItSeasonUtilities.IsEpiphany(dateToEvaluate), Is.True);
+			Assert.That(It.IsEpiphany(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -37,7 +37,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 3, 17);
 
-			Assert.That(ItSeasonUtilities.IsNationalDay(dateToEvaluate), Is.True);
+			Assert.That(It.IsNationalDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -45,7 +45,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 4, 25);
 
-			Assert.That(ItSeasonUtilities.IsAnniversaryOfLiberation(dateToEvaluate), Is.True);
+			Assert.That(It.IsAnniversaryOfLiberation(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -53,7 +53,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 1);
 
-			Assert.That(ItSeasonUtilities.IsLabourDay(dateToEvaluate), Is.True);
+			Assert.That(It.IsLabourDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -61,7 +61,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 6, 2);
 
-			Assert.That(ItSeasonUtilities.IsRepublicDay(dateToEvaluate), Is.True);
+			Assert.That(It.IsRepublicDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -69,7 +69,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 8, 15);
 
-			Assert.That(ItSeasonUtilities.IsAssumptionDay(dateToEvaluate), Is.True);
+			Assert.That(It.IsAssumptionDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -77,7 +77,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 1);
 
-			Assert.That(ItSeasonUtilities.IsAllSaintsDay(dateToEvaluate), Is.True);
+			Assert.That(It.IsAllSaintsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -85,7 +85,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 12, 8);
 
-			Assert.That(ItSeasonUtilities.IsImmaculateConception(dateToEvaluate), Is.True);
+			Assert.That(It.IsImmaculateConception(dateToEvaluate), Is.True);
 		}
 	}
 }

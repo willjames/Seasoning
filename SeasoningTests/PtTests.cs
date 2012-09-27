@@ -5,7 +5,7 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class PtSeasonUtilitiesTests
+	public class PtTests
 	{
 		/*
 		 * from http://en.wikipedia.org/wiki/Public_holidays_in_Portugal
@@ -36,7 +36,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 3, 8);
 
-			Assert.That(PtSeasonUtilities.IsCarnival(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsCarnival(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -44,7 +44,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 4, 25);
 
-			Assert.That(PtSeasonUtilities.IsFreedomDay(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsFreedomDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -52,7 +52,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 1);
 
-			Assert.That(PtSeasonUtilities.IsLabourDay(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsLabourDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -60,14 +60,14 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 6, 10);
 
-			Assert.That(PtSeasonUtilities.IsPortugalDay(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsPortugalDay(dateToEvaluate), Is.True);
 		}
 
 		public void Should_return_true_for_IsAssumption()
 		{
 			var dateToEvaluate = new DateTime(2011, 8, 15);
 
-			Assert.That(PtSeasonUtilities.IsAssumption(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsAssumption(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -75,7 +75,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 5);
 
-			Assert.That(PtSeasonUtilities.IsRepublicDay(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsRepublicDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -83,7 +83,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 1);
 
-			Assert.That(PtSeasonUtilities.IsAllSaintsDay(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsAllSaintsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -91,7 +91,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 12, 1);
 
-			Assert.That(PtSeasonUtilities.IsRestorationOfIndependenceDay(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsRestorationOfIndependenceDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -99,7 +99,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 12, 8);
 
-			Assert.That(PtSeasonUtilities.IsImmaculateConception(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsImmaculateConception(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -107,7 +107,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(60);
 
-			Assert.That(PtSeasonUtilities.IsCorpusChristi(dateToEvaluate), Is.True);
+			Assert.That(Pt.IsCorpusChristi(dateToEvaluate), Is.True);
 		}
 
 	}

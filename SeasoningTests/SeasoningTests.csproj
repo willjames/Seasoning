@@ -43,16 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaSeasonUtilitiesTests.cs" />
-    <Compile Include="DeSeasonUtilitiesTests.cs" />
-    <Compile Include="EsSeasonUtilitiesTests.cs" />
-    <Compile Include="ItSeasonUtilitiesTests.cs" />
+    <Compile Include="CaTests.cs" />
+    <Compile Include="DeTests.cs" />
+    <Compile Include="EsTests.cs" />
+    <Compile Include="ItTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FrSeasonUtilitiesTests.cs" />
-    <Compile Include="PtSeasonUtilitiesTests.cs" />
+    <Compile Include="FrTests.cs" />
+    <Compile Include="PtTests.cs" />
     <Compile Include="SeasonUtilitiesTests.cs" />
-    <Compile Include="UkSeasonUtilitiesTests.cs" />
-    <Compile Include="UsSeasonUtilitiesTests.cs" />
+    <Compile Include="UkTests.cs" />
+    <Compile Include="UsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Seasoning\Seasoning.csproj">

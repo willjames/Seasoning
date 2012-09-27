@@ -40,16 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CaSeasonUtilities.cs" />
-    <Compile Include="ItSeasonUtilities.cs" />
-    <Compile Include="PtSeasonUtilities.cs" />
-    <Compile Include="DeSeasonUtilities.cs" />
-    <Compile Include="EsSeasonUtilities.cs" />
-    <Compile Include="FrSeasonUtilities.cs" />
+    <Compile Include="Ca.cs" />
+    <Compile Include="It.cs" />
+    <Compile Include="Pt.cs" />
+    <Compile Include="De.cs" />
+    <Compile Include="Es.cs" />
+    <Compile Include="Fr.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeasonUtilities.cs" />
-    <Compile Include="UkSeasonUtilities.cs" />
-    <Compile Include="UsSeasonUtilities.cs" />
+    <Compile Include="Uk.cs" />
+    <Compile Include="Us.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

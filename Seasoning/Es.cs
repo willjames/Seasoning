@@ -2,7 +2,7 @@
 
 namespace Seasoning
 {
-	public class EsSeasonUtilities : SeasonUtilities
+	public class Es : SeasonUtilities
 	{
 		public static bool IsStJosephsDay(DateTime dateToEvaluate)
 		{

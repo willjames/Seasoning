@@ -2,7 +2,7 @@
 
 namespace Seasoning
 {
-	public class UkSeasonUtilities : SeasonUtilities
+	public class Uk : SeasonUtilities
 	{
 		public static bool IsAprilFoolsDay(DateTime dateToEvaluate)
 		{

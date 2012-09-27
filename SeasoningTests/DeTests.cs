@@ -5,7 +5,7 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class DeSeasonUtilitiesTests
+	public class DeTests
 	{
 		/* from http://en.wikipedia.org/wiki/Public_holidays_in_Germany
 		 * German Public Holidays:
@@ -31,7 +31,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 1, 6);
 
-			Assert.That(DeSeasonUtilities.IsEpiphany(dateToEvaluate), Is.True);
+			Assert.That(De.IsEpiphany(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -39,7 +39,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 1);
 
-			Assert.That(DeSeasonUtilities.IsLabourDay(dateToEvaluate), Is.True);
+			Assert.That(De.IsLabourDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -47,7 +47,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(39);
 
-			Assert.That(DeSeasonUtilities.IsAscensionDay(dateToEvaluate), Is.True);
+			Assert.That(De.IsAscensionDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -55,7 +55,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(50);
 
-			Assert.That(DeSeasonUtilities.IsWhitMonday(dateToEvaluate), Is.True);
+			Assert.That(De.IsWhitMonday(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -63,7 +63,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = SeasonUtilities.EasterSunday(2011).AddDays(60);
 
-			Assert.That(DeSeasonUtilities.IsCorpusChristi(dateToEvaluate), Is.True);
+			Assert.That(De.IsCorpusChristi(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -71,7 +71,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011,8,8);
 
-			Assert.That(DeSeasonUtilities.IsPeaceFestival(dateToEvaluate), Is.True);
+			Assert.That(De.IsPeaceFestival(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -79,7 +79,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 8, 15);
 
-			Assert.That(DeSeasonUtilities.IsAssumptionDay(dateToEvaluate), Is.True);
+			Assert.That(De.IsAssumptionDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -87,7 +87,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 3);
 
-			Assert.That(DeSeasonUtilities.IsGermanUnityDay(dateToEvaluate), Is.True);
+			Assert.That(De.IsGermanUnityDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -95,7 +95,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 31);
 
-			Assert.That(DeSeasonUtilities.IsReformationDay(dateToEvaluate), Is.True);
+			Assert.That(De.IsReformationDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
@@ -103,7 +103,7 @@ namespace SeasoningTests
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 1);
 
-			Assert.That(DeSeasonUtilities.IsAllSaints(dateToEvaluate), Is.True);
+			Assert.That(De.IsAllSaints(dateToEvaluate), Is.True);
 		}
 
 	}

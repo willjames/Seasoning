@@ -5,7 +5,7 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class FrSeasonUtilitiesTests
+	public class FrTests
 	{
 		/* Specific dates below good for 2012
 			* 
@@ -29,56 +29,56 @@ namespace SeasoningTests
 		public void Should_return_true_for_IsLabourDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 1);
-			Assert.That(FrSeasonUtilities.IsLabourDay(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsLabourDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsVEDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 8);
-			Assert.That(FrSeasonUtilities.IsVEDay(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsVEDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsAscensionDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 17);
-			Assert.That(FrSeasonUtilities.IsAscensionDay(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsAscensionDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsPentecost()
 		{
 			var dateToEvaluate = new DateTime(2011, 5, 28);
-			Assert.That(FrSeasonUtilities.IsPentecost(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsPentecost(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsFeteNational()
 		{
 			var dateToEvaluate = new DateTime(2011, 7, 14);
-			Assert.That(FrSeasonUtilities.IsFeteNational(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsFeteNational(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsAssumption()
 		{
 			var dateToEvaluate = new DateTime(2011, 8, 15);
-			Assert.That(FrSeasonUtilities.IsAssumption(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsAssumption(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsAllSaintsDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 1);
-			Assert.That(FrSeasonUtilities.IsAllSaintsDay(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsAllSaintsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsArmisticeDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 11);
-			Assert.That(FrSeasonUtilities.IsArmisticeDay(dateToEvaluate), Is.True);
+			Assert.That(Fr.IsArmisticeDay(dateToEvaluate), Is.True);
 		}
 
 	}

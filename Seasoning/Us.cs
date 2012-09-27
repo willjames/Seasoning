@@ -2,7 +2,7 @@ using System;
 
 namespace Seasoning
 {
-	public class UsSeasonUtilities : SeasonUtilities
+	public class Us : SeasonUtilities
 	{
 		public static bool IsMartinLutherKingBirthday(DateTime dateToEvaluate)
 		{

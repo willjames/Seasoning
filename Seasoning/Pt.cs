@@ -2,7 +2,7 @@
 
 namespace Seasoning
 {
-	public class PtSeasonUtilities : SeasonUtilities
+	public class Pt : SeasonUtilities
 	{
 		public static bool IsFreedomDay(DateTime dateToEvaluate)
 		{

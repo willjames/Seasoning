@@ -2,7 +2,7 @@
 
 namespace Seasoning
 {
-	public class DeSeasonUtilities : SeasonUtilities
+	public class De : SeasonUtilities
 	{
 		public static bool IsEpiphany(DateTime dateToEvaluate)
 		{

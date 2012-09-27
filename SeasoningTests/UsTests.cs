@@ -5,7 +5,7 @@ using Seasoning;
 namespace SeasoningTests
 {
 	[TestFixture]
-	public class UsSeasonUtilitiesTests
+	public class UsTests
 	{
 
 		/*
@@ -50,154 +50,154 @@ namespace SeasoningTests
 		public void Should_return_true_for_IsMartinLutherKingBirthday()
 		{
 			var dateToEvaluate = new DateTime(2012, 01, 16); //known third Monday in January
-			Assert.That(UsSeasonUtilities.IsMartinLutherKingBirthday(dateToEvaluate), Is.True);
+			Assert.That(Us.IsMartinLutherKingBirthday(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsIndependenceDay()
 		{
 			var dateToEvaluate = new DateTime(2012, 07, 04);
-			Assert.That(UsSeasonUtilities.IsIndependenceDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsIndependenceDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsVeteransDay()
 		{
 			var dateToEvaluate = new DateTime(2012, 11, 11);
-			Assert.That(UsSeasonUtilities.IsVeteransDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsVeteransDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsWashingtonsBirthday()
 		{
 			var dateToEvaluate = new DateTime(2012, 02, 20);
-			Assert.That(UsSeasonUtilities.IsWashingtonsBirthday(dateToEvaluate), Is.True);
+			Assert.That(Us.IsWashingtonsBirthday(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsLaborDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 09, 05);
-			Assert.That(UsSeasonUtilities.IsLaborDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsLaborDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsColumbusDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 10);
-			Assert.That(UsSeasonUtilities.IsColumbusDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsColumbusDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsThanksgiving()
 		{
 			var dateToEvaluate = new DateTime(2011, 11, 24);
-			Assert.That(UsSeasonUtilities.IsThanksgiving(dateToEvaluate), Is.True);
+			Assert.That(Us.IsThanksgiving(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsGroundhogDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 02, 02);
-			Assert.That(UsSeasonUtilities.IsGroundhogDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsGroundhogDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsValentinesDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 02, 14);
-			Assert.That(UsSeasonUtilities.IsValentinesDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsValentinesDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsStPatricksDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 03, 17);
-			Assert.That(UsSeasonUtilities.IsStPatricksDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsStPatricksDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsAprilFoolsDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 04, 01);
-			Assert.That(UsSeasonUtilities.IsAprilFoolsDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsAprilFoolsDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsEarthDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 04, 22);
-			Assert.That(UsSeasonUtilities.IsEarthDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsEarthDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsMayDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 05, 01);
-			Assert.That(UsSeasonUtilities.IsMayDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsMayDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsCincoDeMayo()
 		{
 			var dateToEvaluate = new DateTime(2011, 05, 05);
-			Assert.That(UsSeasonUtilities.IsCincoDeMayo(dateToEvaluate), Is.True);
+			Assert.That(Us.IsCincoDeMayo(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsMothersDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 05, 08);
-			Assert.That(UsSeasonUtilities.IsMothersDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsMothersDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsFathersDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 06, 19);
-			Assert.That(UsSeasonUtilities.IsFathersDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsFathersDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsFlagsDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 06, 14);
-			Assert.That(UsSeasonUtilities.IsFlagDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsFlagDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsPatriotDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 9, 11);
-			Assert.That(UsSeasonUtilities.IsPatriotDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsPatriotDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsConstitutionCitizenshipDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 9, 17);
-			Assert.That(UsSeasonUtilities.IsConstitutionCitizenshipDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsConstitutionCitizenshipDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsLeifEriksonDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 9);
-			Assert.That(UsSeasonUtilities.IsLeifEriksonDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsLeifEriksonDay(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsHalloween()
 		{
 			var dateToEvaluate = new DateTime(2011, 10, 31);
-			Assert.That(UsSeasonUtilities.IsHalloween(dateToEvaluate), Is.True);
+			Assert.That(Us.IsHalloween(dateToEvaluate), Is.True);
 		}
 
 		[Test]
 		public void Should_return_true_for_IsPearlHarborRemembranceDay()
 		{
 			var dateToEvaluate = new DateTime(2011, 12, 7);
-			Assert.That(UsSeasonUtilities.IsPearlHarborRemembranceDay(dateToEvaluate), Is.True);
+			Assert.That(Us.IsPearlHarborRemembranceDay(dateToEvaluate), Is.True);
 		}
 
 		//#TODO

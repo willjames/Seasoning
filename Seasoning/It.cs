@@ -2,7 +2,7 @@
 
 namespace Seasoning
 {
-	public class ItSeasonUtilities : SeasonUtilities
+	public class It : SeasonUtilities
 	{
 		public static bool IsNationalDay(DateTime dateToEvaluate)
 		{

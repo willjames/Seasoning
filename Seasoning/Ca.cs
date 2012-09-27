@@ -1,9 +1,8 @@
 using System;
-using Seasoning;
 
 namespace Seasoning
 {
-	public class CaSeasonUtilities : SeasonUtilities
+	public class Ca : SeasonUtilities
 	{
 		public static bool IsCanadaDay(DateTime dateToEvaluate)
 		{

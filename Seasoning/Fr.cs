@@ -2,7 +2,7 @@
 
 namespace Seasoning
 {
-	public class FrSeasonUtilities : SeasonUtilities
+	public class Fr : SeasonUtilities
 	{
 		public static bool IsLabourDay(DateTime dateToEvaluate)
 		{
