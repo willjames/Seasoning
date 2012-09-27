@@ -1,0 +1,5 @@
+_resharper.*
+/obj
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
